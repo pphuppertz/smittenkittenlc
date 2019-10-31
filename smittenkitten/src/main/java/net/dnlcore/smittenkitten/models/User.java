@@ -5,6 +5,12 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
+import java.util.Collection;
+import java.util.Iterator;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.ListIterator;
+import javax.persistence.ManyToMany;
 
 @Entity
 public class User {
@@ -39,6 +45,13 @@ public class User {
     private String dislikes;
     @NotNull
     private Environment environment;
+    private String pictureLocation;
+    @ManyToMany
+    private ArrayList<User> favorites = new ArrayList<>();
+
+    public List<User> getFavorites() {
+        return favorites;
+    }
 
     public int getId() {
         return id;
@@ -107,5 +120,6 @@ public class User {
     public void setEnvironment(Environment environment) {
         this.environment = environment;
     }
+
 }
 
