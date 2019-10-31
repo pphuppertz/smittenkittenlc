@@ -4,8 +4,8 @@
 <h1 th:text="${title}">Default Title</h1>
 <form method="post" style="max-width:600px;" th:object="${user}">
     <div class="form-group">
-        <label th:for="name">Name</label>
-        <input class="form-control" th:field="*{name}" />
+        <label th:for="name">Email Address:</label>
+        <input class="form-control" th:field="*{email}" />
     </div>
     <input type="submit" value="Register" />
 </form>
