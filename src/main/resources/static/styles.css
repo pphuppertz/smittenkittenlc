@@ -1,0 +1,18 @@
+body {
+  text-align: center;
+}
+
+/* Containers */
+.container-fluid {
+  padding: 7% 15%;
+}
+
+h1, h2, h3 {
+  font-family: "Montserrat";
+  font-weight: 900;
+}
+
+p {
+  color: #8f8f8f;
+  font-weight: 400;
+}
