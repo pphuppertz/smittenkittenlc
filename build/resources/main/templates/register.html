@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org/">
+<head th:replace="fragments :: head"></head>
 <body class="container">
 <h1 th:text="${title}">Default Title</h1>
-
 <form method="post" style="max-width:600px;" th:object="${user}">
     <div class="form-group">
-        <label th:for="name">Name</label>
-        <input class="form-control" th:field="*{name}" />
-        <input class="form-control" name = "password" type = "password" id="password" />
-        <input class="form-control" name = "confirmPassword" type = "password" id="confirmPassword" />
+        <label th:for="name">Email Address:</label>
+        <input class="form-control" th:field="*{email}" />
     </div>
-
     <input type="submit" value="Register" />
+    <select name="environment">
+        <option th:each="envOpt : ${T(net.dnlcore.smittenkitten.models.User.Environment).values()}"
+                th.value="bla" th.text="bla"></option>
+    </select>
 </form>
-
 </body>
 </html>

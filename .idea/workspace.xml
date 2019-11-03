@@ -2,9 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7ddb0dee-bb4f-4dd2-9128-d5209604b217" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/styles.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/net/dnlcore/smittenkitten/controllers/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/net/dnlcore/smittenkitten/controllers/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/net/dnlcore/smittenkitten/models/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/net/dnlcore/smittenkitten/models/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/net/dnlcore/smittenkitten/models/data/UserDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/net/dnlcore/smittenkitten/models/data/UserDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/templates/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/templates/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/templates/register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/dnlcore/smittenkitten/models/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/dnlcore/smittenkitten/models/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/register.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -183,7 +187,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/net/dnlcore/smittenkitten/models/User.java</url>
-          <line>96</line>
+          <line>102</line>
           <option name="timeStamp" value="14" />
         </line-breakpoint>
       </breakpoints>
