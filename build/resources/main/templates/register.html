@@ -9,6 +9,10 @@
         <input class="form-control" th:field="*{email}" />
     </div>
     <input type="submit" value="Register" />
+    <select name="environment">
+        <option th:each="envOpt : ${T(net.dnlcore.smittenkitten.models.User.Environment).values()}"
+                th.value="bla" th.text="bla"></option>
+    </select>
 </form>
 </body>
 </html>
