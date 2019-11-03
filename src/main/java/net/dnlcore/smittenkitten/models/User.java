@@ -9,21 +9,8 @@ import javax.validation.constraints.Size;
 @Entity
 public class User {
     public enum Fertility {
-        FERTILE, INFERTILE
-    }
-
-    public static enum Environment {
-        INDOOR("indoor"), OUTDOOR("outdoor"), BOTH("both");
-        private final String displayName;
-
-        Environment(String displayName) {
-            this.displayName = displayName;
+            FERTILE, INFERTILE
         }
-
-        public String getDisplayName() {
-            return displayName;
-        }
-    }
 
     @Id
     @GeneratedValue
