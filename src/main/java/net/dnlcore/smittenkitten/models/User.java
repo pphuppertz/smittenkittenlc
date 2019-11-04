@@ -11,6 +11,9 @@ public class User {
     public enum Fertility {
             FERTILE, INFERTILE
         }
+    public enum Environment {
+        Indoor, Outdoor, Both
+    }
 
     @Id
     @GeneratedValue
