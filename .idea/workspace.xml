@@ -1,16 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7ddb0dee-bb4f-4dd2-9128-d5209604b217" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/net/dnlcore/smittenkitten/controllers/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/net/dnlcore/smittenkitten/controllers/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/net/dnlcore/smittenkitten/models/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/net/dnlcore/smittenkitten/models/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/net/dnlcore/smittenkitten/models/data/UserDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/net/dnlcore/smittenkitten/models/data/UserDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/templates/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/templates/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/templates/register.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/dnlcore/smittenkitten/models/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/dnlcore/smittenkitten/models/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/register.html" afterDir="false" />
-    </list>
+    <list default="true" id="7ddb0dee-bb4f-4dd2-9128-d5209604b217" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -157,6 +148,14 @@
       <option name="presentableId" value="Default" />
       <updated>1572377634275</updated>
     </task>
+    <task id="LOCAL-00001" summary="attempt at implementing dropdown from enum">
+      <created>1572789669947</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1572789669947</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -171,6 +170,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="attempt at implementing dropdown from enum" />
+    <option name="LAST_COMMIT_MESSAGE" value="attempt at implementing dropdown from enum" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
