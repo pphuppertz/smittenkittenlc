@@ -2,23 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7ddb0dee-bb4f-4dd2-9128-d5209604b217" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/dnlcore/smittenkitten/models/Environment.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/net/dnlcore/smittenkitten/controllers/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/net/dnlcore/smittenkitten/controllers/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/net/dnlcore/smittenkitten/models/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/net/dnlcore/smittenkitten/models/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/libs/smittenkitten-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/smittenkitten-0.0.1-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/net.dnlcore.smittenkitten.SmittenkittenApplicationTests.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/net.dnlcore.smittenkitten.SmittenkittenApplicationTests.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/net.dnlcore.smittenkitten.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/packages/net.dnlcore.smittenkitten.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/templates/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/templates/register.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-net.dnlcore.smittenkitten.SmittenkittenApplicationTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-net.dnlcore.smittenkitten.SmittenkittenApplicationTests.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/bootJar/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/bootJar/MANIFEST.MF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/dnlcore/smittenkitten/controllers/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/dnlcore/smittenkitten/controllers/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/dnlcore/smittenkitten/models/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/dnlcore/smittenkitten/models/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/register.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -167,7 +151,14 @@
       <option name="project" value="LOCAL" />
       <updated>1572791787587</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="attempt at getting enum dropdown to work -- still failing">
+      <created>1572819593115</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1572819593115</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -184,8 +175,11 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="something something workspace.xml" />
-    <option name="LAST_COMMIT_MESSAGE" value="something something workspace.xml" />
+    <MESSAGE value="attempt at getting enum dropdown to work -- still failing" />
+    <option name="LAST_COMMIT_MESSAGE" value="attempt at getting enum dropdown to work -- still failing" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
