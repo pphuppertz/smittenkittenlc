@@ -9,7 +9,7 @@ import javax.validation.constraints.Size;
 @Entity
 public class User {
     public enum Fertility {
-            FERTILE, INFERTILE
+            Fertile, Infertile
         }
     public enum Environment {
         Indoor, Outdoor, Both

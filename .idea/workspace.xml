@@ -4,10 +4,8 @@
     <list default="true" id="7ddb0dee-bb4f-4dd2-9128-d5209604b217" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/net/dnlcore/smittenkitten/controllers/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/net/dnlcore/smittenkitten/controllers/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/net/dnlcore/smittenkitten/models/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/net/dnlcore/smittenkitten/models/User.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/resources/main/templates/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/templates/register.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/net/dnlcore/smittenkitten/controllers/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/dnlcore/smittenkitten/controllers/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/dnlcore/smittenkitten/models/Environment.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/net/dnlcore/smittenkitten/models/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/dnlcore/smittenkitten/models/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/register.html" afterDir="false" />
     </list>
@@ -48,12 +46,6 @@
                 <item name="smittenkitten" type="f1a62948:ProjectNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
                 <item name="application" type="c8890929:TasksNode$1" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="smittenkitten" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="build" type="c8890929:TasksNode$1" />
               </path>
             </expand>
             <select />
@@ -197,17 +189,17 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/net/dnlcore/smittenkitten/controllers/UserController.java</url>
-          <line>32</line>
+          <line>33</line>
           <option name="timeStamp" value="8" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/net/dnlcore/smittenkitten/controllers/UserController.java</url>
-          <line>33</line>
+          <line>34</line>
           <option name="timeStamp" value="9" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/net/dnlcore/smittenkitten/models/User.java</url>
-          <line>92</line>
+          <line>95</line>
           <option name="timeStamp" value="14" />
         </line-breakpoint>
       </breakpoints>
