@@ -9,8 +9,8 @@
         <input class="form-control" th:field="*{email}" />
     </div>
     <select name="environment">
-        <option th:each="envOpt : ${environments}"
-                th.value="${envOpt.ordinal}" th.text="${envOpt.getDisplayValue()}"></option>
+        <option th:each="envOpt : ${T(net.dnlcore.smittenkitten.models.User.Environment).values()}"
+                th:value="${envOpt}" th:text="${envOpt}"></option>
     </select>
     <input type="submit" value="Register" />
 

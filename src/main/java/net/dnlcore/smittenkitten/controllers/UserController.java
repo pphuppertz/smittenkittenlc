@@ -19,7 +19,6 @@ public class UserController {
     @RequestMapping(value = "register", method = RequestMethod.GET)
     public String displayRegisterUser(Model model) {
         model.addAttribute("title", "register");
-        model.addAttribute("environments", net.dnlcore.smittenkitten.models.Environment.values());
         model.addAttribute(new User());
         return ("register");
     }
