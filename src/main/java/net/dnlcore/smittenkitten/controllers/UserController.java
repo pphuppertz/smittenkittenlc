@@ -20,6 +20,8 @@ public class UserController {
     public String displayRegisterUser(Model model) {
         model.addAttribute("title", "register");
         model.addAttribute(new User());
+        model.addAttribute("password", "");
+        model.addAttribute("confirmPassword", "");
         return ("register");
     }
 
