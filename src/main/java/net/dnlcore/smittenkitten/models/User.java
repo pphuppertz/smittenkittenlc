@@ -1,10 +1,12 @@
 package net.dnlcore.smittenkitten.models;
 
+import com.amdelamar.jhash.Hash;
+import com.amdelamar.jhash.exception.InvalidHashException;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
-import javax.validation.constraints.NotNull;
-import javax.validation.constraints.Size;
+import javax.validation.constraints.*;
 
 @Entity
 public class User {
@@ -19,12 +21,14 @@ public class User {
     @GeneratedValue
     private int id;
     @NotNull
-    @Size(min = 2, max = 25)
+    @Email(message="This don't work")
     private String email;
     @NotNull
+    @Positive(message = "You need to be older than 0.")
     private int age;
     @NotNull
-    @Size(min = 2, max = 256)
+    @Size(min = 2, message="2 characters or more please")
+    @Size(max=256, message="Isn't that a bit long?")
     private String location;
     @NotNull
     @Size(min = 2, max = 50)
@@ -35,6 +39,8 @@ public class User {
     private String dislikes;
     @NotNull
     private Environment environment;
+
+    private String storedPassword;
 
     public int getId() {
         return id;
@@ -61,7 +67,7 @@ public class User {
     }
 
     public void setLocation(String location) {
-        this.location = location;
+        this.location = location.trim();
     }
 
     public String getName() {
@@ -102,6 +108,33 @@ public class User {
 
     public void setEnvironment(Environment environment) {
         this.environment = environment;
+    }
+
+    public void setPassword(String pwd, String confirmedPwd) throws Exception {
+        if (!confirmedPwd.equals(pwd))
+        {
+            //let's make sure this interrupts the entire process
+            throw new Exception("Passwords do not match.");
+        }
+        else {
+            storedPassword = getHashedPassword(pwd);
+        }
+    }
+
+    public boolean verifyPassword(String pwdAttempt) {
+        try {
+            if (Hash.password(pwdAttempt.toCharArray()).verify(storedPassword)) return true;
+        }
+        catch (InvalidHashException e)
+        {
+            //this means false
+        }
+        return false;
+    }
+
+    private String getHashedPassword(String pwd) {
+        char[] pwdArray = pwd.toCharArray();
+        return Hash.password(pwdArray).create();
     }
 }
 
