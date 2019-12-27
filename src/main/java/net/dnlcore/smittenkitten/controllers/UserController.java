@@ -44,7 +44,7 @@ public class UserController {
             return "register";
         }
         userDao.save(newUser);
-        return ("login");
+        return ("redirect:login");
     }
 
     @RequestMapping(value="login", method=RequestMethod.GET)
