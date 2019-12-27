@@ -9,9 +9,9 @@
         <input class="form-control" th:field="*{email}" />
         <div th:if="${#fields.hasErrors('email')}" th:errors="*{email}">Email Error</div>
         <label th:for="password">Password:</label>
-        <input class="form-control" type="password" name="password"/>
-        <label th:for="confirmPassword">Confirm password:</label>
+        <input class="form-control" type="password" name="password" />
 
+        <label th:for="confirmPassword">Confirm password:</label>
         <input class="form-control" type="password" name="confirmPassword" />
         <label th:for="name">Name:</label>
         <input class="form-control" th:field="*{name}" />

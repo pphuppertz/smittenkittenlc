@@ -1,8 +1,26 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org/">
 <head th:replace="fragments :: head"></head>
-
 <body class="container">
-<h1>Logged on successfully!</h1>
+<h1 th:text="${title}">Users</h1>
+<table class="table">
+
+    <tr>
+        <th>Name</th>
+        <th>Location</th>
+        <th>Age</th>
+        <th>Environment</th>
+        <th>Likes</th>
+    </tr>
+
+    <tr th:each="user : ${users}">
+        <td th:text="${user.name}"></td>
+        <td th:text="${user.location}"></td>
+        <td th:text="${user.age}"></td>
+        <td th:text="${user.environment}"></td>
+        <td th:text="${user.likes}"></td>
+    </tr>
+
+</table>
 </body>
 </html>

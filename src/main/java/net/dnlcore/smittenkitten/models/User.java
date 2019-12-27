@@ -41,6 +41,7 @@ public class User {
     private Environment environment;
 
     private String storedPassword;
+    private boolean doPasswordsMatch;
 
     public int getId() {
         return id;
@@ -114,9 +115,11 @@ public class User {
         if (!confirmedPwd.equals(pwd))
         {
             //let's make sure this interrupts the entire process
+            doPasswordsMatch = false;
             throw new Exception("Passwords do not match.");
         }
         else {
+            doPasswordsMatch = true;
             storedPassword = getHashedPassword(pwd);
         }
     }

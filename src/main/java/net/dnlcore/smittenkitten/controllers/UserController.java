@@ -56,9 +56,16 @@ public class UserController {
     public String loginUser(@RequestParam String userName, @RequestParam String password, Model model) {
         User user = userDao.findByName(userName).get(0);
         if (user.verifyPassword(password)) {
-            return ("index");
+            return("redirect:");
         }
         return("login");
+    }
+
+    @RequestMapping(value="")
+    public String index(Model model) {
+        model.addAttribute("users", userDao.findAll());
+        model.addAttribute("title", "All unsmitten kittens");
+        return("index");
     }
 }
 
