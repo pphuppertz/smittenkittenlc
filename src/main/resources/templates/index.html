@@ -7,6 +7,7 @@
 
     <tr>
         <th>Name</th>
+        <th>Gender</th>
         <th>Location</th>
         <th>Age</th>
         <th>Environment</th>
@@ -14,7 +15,8 @@
     </tr>
 
     <tr th:each="user : ${users}">
-        <td th:text="${user.name}"></td>
+        <td> <a th:href="'/user/view/' + ${user.id}" th:text="${user.name}" ></a></td>
+        <td th:text="${user.gender}"></td>
         <td th:text="${user.location}"></td>
         <td th:text="${user.age}"></td>
         <td th:text="${user.environment}"></td>

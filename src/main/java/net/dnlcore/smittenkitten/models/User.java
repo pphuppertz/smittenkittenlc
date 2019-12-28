@@ -17,6 +17,10 @@ public class User {
         Indoor, Outdoor, Both
     }
 
+    public enum Gender {
+        Female, Male, Nonbinary
+    }
+
     @Id
     @GeneratedValue
     private int id;
@@ -26,6 +30,8 @@ public class User {
     @NotNull
     @Positive(message = "You need to be older than 0.")
     private int age;
+    @NotNull
+    private Gender gender;
     @NotNull
     @Size(min = 2, message="2 characters or more please")
     @Size(max=256, message="Isn't that a bit long?")
@@ -41,7 +47,6 @@ public class User {
     private Environment environment;
 
     private String storedPassword;
-    private boolean doPasswordsMatch;
 
     public int getId() {
         return id;
@@ -61,6 +66,14 @@ public class User {
 
     public void setAge(int age) {
         this.age = age;
+    }
+
+    public Gender getGender() {
+        return gender;
+    }
+
+    public void setGender(Gender gender) {
+        this.gender = gender;
     }
 
     public String getLocation() {
@@ -99,7 +112,7 @@ public class User {
         return dislikes;
     }
 
-    public void setDislikes() {
+    public void setDislikes(String dislikes) {
         this.dislikes = dislikes;
     }
 
@@ -115,11 +128,9 @@ public class User {
         if (!confirmedPwd.equals(pwd))
         {
             //let's make sure this interrupts the entire process
-            doPasswordsMatch = false;
             throw new Exception("Passwords do not match.");
         }
         else {
-            doPasswordsMatch = true;
             storedPassword = getHashedPassword(pwd);
         }
     }

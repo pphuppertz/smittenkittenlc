@@ -17,22 +17,31 @@
         <input class="form-control" th:field="*{name}" />
         <label th:for="age">Age:</label>
         <input class="form-control" th:field="*{age}" />
+        <label th:for="gender">Gender</label>
+        <select name="gender">
+            <option th:each="genderOpt : ${T(net.dnlcore.smittenkitten.models.User.Gender).values()}"
+                    th:value="${genderOpt}" th:text="${genderOpt}"></option>
+        </select>
+        <br />
         <div th:if="${#fields.hasErrors('age')}" th:errors="*{age}">Age Error</div>
         <label th:for="name">Location:</label>
         <input class="form-control" th:field="*{location}" />
         <div th:if="${#fields.hasErrors('location')}" th:errors="*{location}">Location Error</div>
+        <label th:for="fertility">Fertility</label>
         <select name="fertility">
             <option th:each="fertilityOpt : ${T(net.dnlcore.smittenkitten.models.User.Fertility).values()}"
                     th:value="${fertilityOpt}" th:text="${fertilityOpt}"></option>
         </select>
+        <br />
+        <label th:for="environment">Environment preference</label>
         <select name="environment">
             <option th:each="envOpt : ${T(net.dnlcore.smittenkitten.models.User.Environment).values()}"
                     th:value="${envOpt}" th:text="${envOpt}"></option>
         </select>
-
-        <label th:for="name">Likes:</label>
+        <br />
+        <label th:for="likes">Likes:</label>
         <input class="form-control" th:field="*{likes}" />
-        <label th:for="name">Dislikes:</label>
+        <label th:for="dislikes">Dislikes:</label>
         <input class="form-control" th:field="*{dislikes}" />
     </div>
 
