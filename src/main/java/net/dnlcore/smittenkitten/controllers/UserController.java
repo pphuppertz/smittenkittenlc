@@ -7,11 +7,14 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.validation.ObjectError;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import javax.validation.Valid;
+import java.awt.*;
+import java.util.Optional;
 
 @Controller
 @RequestMapping("user")
@@ -66,6 +69,14 @@ public class UserController {
         model.addAttribute("users", userDao.findAll());
         model.addAttribute("title", "All unsmitten kittens");
         return("index");
+    }
+
+    @RequestMapping(value="view/{userId}", method = RequestMethod.GET)
+    public String viewMenu(Model model, @PathVariable int userId){
+
+        User user = userDao.findById(userId).get();
+        model.addAttribute("user", user);
+        return "view";
     }
 }
 
