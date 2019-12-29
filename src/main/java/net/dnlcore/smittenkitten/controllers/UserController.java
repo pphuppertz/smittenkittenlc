@@ -73,7 +73,7 @@ public class UserController {
 
     @RequestMapping(value="view/{userId}", method = RequestMethod.GET)
     public String viewMenu(Model model, @PathVariable int userId){
-
+        //this is a change
         User user = userDao.findById(userId).get();
         model.addAttribute("user", user);
         return "view";
