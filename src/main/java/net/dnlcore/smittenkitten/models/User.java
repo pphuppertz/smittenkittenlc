@@ -136,12 +136,12 @@ public class User {
     }
 
     public boolean verifyPassword(String pwdAttempt) {
-        try {
-            if (Hash.password(pwdAttempt.toCharArray()).verify(storedPassword)) return true;
-        }
-        catch (InvalidHashException e)
-        {
-            //this means false
+        if (pwdAttempt != null && pwdAttempt != "") {
+            try {
+                if (Hash.password(pwdAttempt.toCharArray()).verify(storedPassword)) return true;
+            } catch (InvalidHashException e) {
+                //this means false
+            }
         }
         return false;
     }
